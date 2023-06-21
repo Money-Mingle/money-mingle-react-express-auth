@@ -23,15 +23,19 @@ export default function detailsLink() {
   
     return (
       <>
-      <ul>
-        {
-          data.map((user) => <li key={user.user_id}> <SusuMembers users ={user} /> </li>)
-        }
-      </ul>
-        <h1>{data.length > 0 ? data[0].name : ''}</h1>
+      <h1>Susu Name: {data.length > 0 ? data[0].name : ''}</h1>
 
-        <h1>{data.length > 0 ? data[0].next_payment: ''}</h1>
-        <h1>{data.length > 0 ? data[0].payment_amount : ''}</h1>
+      <h1>Users/Payments:</h1>
+      <div>
+        {
+          data.map((user) => <label key={user.user_id}> <SusuMembers users ={user} /> </label>)
+        }
+      </div>
+        
+
+        <h2>Payment Interval: {data.length > 0 ? data[0].next_payment: ''} Days</h2>
+        <h1>Payment Amount: ${data.length > 0 ? data[0].payment_amount : ''}</h1>
+        <h3>Susu ID:{data.length > 0 ? data[0].susu_id:''}</h3>
       </>
         // <div className = "payment-details">
         //   <label>
