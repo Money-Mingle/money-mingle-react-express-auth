@@ -28,7 +28,7 @@ export default function detailsLink() {
       <h1>Users/Payments:</h1>
       <div>
         {
-          data.map((user) => <label key={user.user_id}> <SusuMembers users ={user} /> </label>)
+          data.map((user) => <h3 id={user.user_id} key={user.user_id}> <SusuMembers users ={user} /> </h3>)
         }
       </div>
         
