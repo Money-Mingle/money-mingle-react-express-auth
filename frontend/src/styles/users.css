@@ -20,3 +20,41 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+#card_container{
+    text-align: center;
+    max-width: fit-content;
+    height: fit-content;
+    padding-bottom: 2%;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
+}
+
+#card_title {
+    /* padding-top: 1.5em; */
+    text-align: left;
+    color: #5a836c;
+  }
+
+.card_buttons{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--dark-accent-color);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--dark-accent-color);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--dark-accent-color);
+    margin-left:1em;
+  }
+  
+  .card_buttons:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--dark-accent-color);
+  }
+  
+  .card_buttons:active {
+    transform: scale(0.9);
+  }

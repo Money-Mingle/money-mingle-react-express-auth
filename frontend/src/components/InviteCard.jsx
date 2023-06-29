@@ -37,15 +37,14 @@ async function handleDelete(){
 
   return (
     <div className="individual-card">
-      <Card style={{ width: '18rem' }}>
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      <Card style={{ width: '18rem' }} id="card_container">
       <Card.Body>
-        <Card.Title>{invites.name}</Card.Title>
-        <Card.Text>
+        <Card.Title id="card_title">{invites.name}</Card.Title>
+        <Card.Text id="card_body">
           {invites.username} has invited you to Join Their Susu
         </Card.Text>
-        <Button variant="primary" onClick={handleDelete}>delete</Button>
-        <Button variant="primary" onClick={handleAccept}>accept</Button>
+        <Button className="card_buttons" variant="primary" onClick={handleDelete}>delete</Button>
+        <Button className="card_buttons" variant="primary" onClick={handleAccept}>accept</Button>
       </Card.Body>
     </Card>
     </div>
