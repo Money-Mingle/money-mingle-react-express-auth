@@ -150,7 +150,7 @@ export default function detailsLink() {
           <ul id="member-list">
             {data.map((user) => (
               <div key={user.user_id}>
-<SusuMembers payments={payments} setPayments={setPayments} user={user} owner={currentUser.id!==user.owner ? true : false}/>
+<SusuMembers payments={payments} setPayments={setPayments} user={user} owner={currentUser && currentUser.id!==user.owner ? true : false}/>
               </div>
             ))}
           </ul>

@@ -40,7 +40,7 @@ export default function JoinSusu() {
   return (
     <>
       <Form onSubmit={joiningSusu} id="form_container">
-        <h1>Join A Susu!</h1>
+        <h1 id="join-form-title">Join A Susu!</h1>
         <Form.Group className="mb-3" id='form-password'>
           <Form.Label>Enter Susu Password:</Form.Label>
           <Form.Control id ="form_input" name="susuPassword" placeholder="password" />

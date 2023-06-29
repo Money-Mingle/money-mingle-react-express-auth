@@ -17,7 +17,7 @@ export default function SusuCard({ susu }) {
           <Card.Title className="card_title">{susu.name}</Card.Title>
           
           <Card.Subtitle className="mb-2 text-muted" id="subtitle">
-             ID: {susu.id}
+             ID: {susu.susu_id}
           </Card.Subtitle>
           <ListGroup variant="flush">
             <ListGroup.Item id="payment_amount">
